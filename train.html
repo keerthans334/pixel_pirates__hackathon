@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Train Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button id="back">Back</button>
+        <h2>Train Model</h2>
+        <form id="gestureForm">
+            <label for="gestures">Enter Gestures (comma-separated):</label>
+            <input type="text" id="gestures" name="gestures" placeholder="e.g., Bye, Hi, Yes">
+            <button type="submit">Start Training</button>
+        </form>
+        <div id="gestureCount"></div>
+        <div id="captureWindow"></div>
+        <div id="captureOptions"></div>
+        <div id="trainingResult"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
