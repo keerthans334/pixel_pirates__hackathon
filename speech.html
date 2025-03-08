@@ -2,15 +2,20 @@
 <html>
 <head>
     <title>Speech Recognition</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <div class="container">
-        <button id="back">Back</button>
+        <button id="back" class="secondary-btn">← Back</button>
         <h2>Speech Recognition</h2>
-        <button id="speak">Speak</button>
-        <div id="speechResult"></div>
+        
+        <button id="speak" class="primary-btn speak-button">Speak</button>
+        <button id="start-speech">Start Speech Recognition</button>
+        
+        <div class="status-box" id="speechResult">
+            Speech results will appear here...
+        </div>
     </div>
-    <script src="script.js"></script>
+    <script src="/static/script.js"></script>
 </body>
 </html>
