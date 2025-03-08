@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Handspeak</title>
-    <link rel="icon" sizes="180x180" href="images/favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" sizes="180x180" href="/static/favicon.ico">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <div class="container">
+        <button id="back" class="secondary-btn">← Back</button>
         <h1>Handspeak</h1>
-        <button id="train">Train Model</button>
-        <button id="realtime">Realtime Recognition (Convey)</button>
-        <button id="speech">Speech Recognition (Listen)</button>
-        <button id="clearCache">Clear Cache</button>
-        <div id="cacheResult"></div>
+        <div class="button-group">
+            <button id="train" class="primary-btn">Train Model</button>
+            <button id="realtime" class="primary-btn">Realtime Recognition (Convey)</button>
+            <button id="speech" class="primary-btn">Speech Recognition (Listen)</button>
+            <button id="clearCache" class="secondary-btn">Clear Cache</button>
+        </div>
+        <div class="cache-status" id="cacheResult">
+            Cache Status: Ready
+        </div>
     </div>
-    <script src="script.js"></script>
+    <script src="/static/script.js"></script>
 </body>
 </html>
