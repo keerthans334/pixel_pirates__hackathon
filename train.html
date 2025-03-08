@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Train Model</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Speech Recognition</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <div class="container">
-        <button id="back">Back</button>
-        <h2>Train Model</h2>
-        <form id="gestureForm">
-            <label for="gestures">Enter Gestures (comma-separated):</label>
-            <input type="text" id="gestures" name="gestures" placeholder="e.g., Bye, Hi, Yes">
-            <button type="submit">Start Training</button>
-        </form>
-        <div id="gestureCount"></div>
-        <div id="captureWindow"></div>
-        <div id="captureOptions"></div>
-        <div id="trainingResult"></div>
+        <button id="back" class="secondary-btn">← Back</button>
+        <h2>Speech Recognition</h2>
+        
+        <button id="speak" class="primary-btn speak-button">Speak</button>
+        <button id="start-speech">Start Speech Recognition</button>
+        
+        <div class="status-box" id="speechResult">
+            Speech results will appear here...
+        </div>
     </div>
-    <script src="script.js"></script>
+    <script src="/static/script.js"></script>
 </body>
 </html>
