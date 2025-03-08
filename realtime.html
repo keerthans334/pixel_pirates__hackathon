@@ -2,20 +2,31 @@
 <html>
 <head>
     <title>Realtime Recognition</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <div class="container">
-        <button id="back">Back</button>
+        <button id="back" class="secondary-btn">← Back</button>
         <h2>Realtime Recognition</h2>
-        <button id="startRecognition">Start Recognition</button>
-        <div id="recognitionWindow"></div>
-        <div id="confidenceThreshold"></div>
-        <button id="increaseConfidence">Increase Confidence</button>
-        <button id="decreaseConfidence">Decrease Confidence</button>
-        <button id="verboseMode">Switch to Verbose Mode</button>
-        <button id="history">Display History</button>
+        <button id="startRecognition" class="primary-btn">Start Recognition</button>
+        
+        <div class="recognition-window" id="recognitionWindow">
+            Camera Feed Preview
+        </div>
+
+        <div class="confidence-controls">
+            <button id="decreaseConfidence" class="secondary-btn">-</button>
+            <div id="confidenceThreshold" class="status-box">
+                Confidence Threshold: 75%
+            </div>
+            <button id="increaseConfidence" class="secondary-btn">+</button>
+        </div>
+
+        <div class="button-group">
+            <button id="verboseMode" class="secondary-btn">Switch to Verbose Mode</button>
+            <button id="history" class="secondary-btn">Display History</button>
+        </div>
     </div>
-    <script src="script.js"></script>
+    <script src="/static/script.js"></script>
 </body>
 </html>
